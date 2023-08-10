@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.8%;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+}
+section{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 310px;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+.first-sec{
+    position: relative;
+}
+.eth,.overlay{
+    border-radius: 10px;
+}
+.first-sec .eth{
+    width: 100%;
+    height: 100%;   
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+.overlay:hover {
+    opacity: 0.7;
+}
+h1{
+    margin-top: 1em;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+p{
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: hsl(0, 0%, 100%);
+}
+.desc{
+    margin-top: 1em;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+article,.nft div{
+    display: flex;
+    align-items: center;
+}
+.nft{
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.nft div{
+    gap: .6em;
+    font-size: 1.3rem;
+    font-weight:600;
+}
+.eth-price{
+    color: hsl(178, 100%, 50%);
+}
+.seller{
+    border-top: 2px solid hsl(215, 32%, 27%);
+    padding-top: 1em;
+    margin-top: 1.5em;
+    gap: .4em;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.seller img{
+    width: 40px;
+    border: 2px solid #ff9;
+    border-radius: 50%;
+}
+.attribution {
+     font-size: 1.5rem; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+}
+    
+footer a{
+    text-decoration: none;
+    color: rgb(247, 42, 247);
+}
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 2rem;
+    }
+    .desc{
+        font-size: 1.5rem;
+    }
+}
