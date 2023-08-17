@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 65.8%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding: 5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-sec,nav,.sec-sec article, .sec-sec{
+    align-items: center;
+}
+.first-sec,nav,.sec-sec article,.sec-sec,.footer, .footer-div{
+    display: flex;
+}
+.nav-link,.sec-sec article,.over-them-all{
+    box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.7);
+}
+.sec-sec .text h2,.over-them-all,.nav-link,.intro h1,.intro p{
+    color: hsl(192, 100%, 9%);
+}
+h1,h2{
+    font-family: 'Poppins', sans-serif; 
+}
+nav{
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+}
+.nav-link{ /* making the link look like button*/
+    text-decoration: none;
+    padding: 1em 3.8em;
+    border-radius: 17px;
+    background-color: #fff;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.nav-link:hover{
+    color: hsl(208, 11%, 55%)
+}
+.first-sec{
+    gap: 20px;
+    margin-top: 3.5em;
+    min-height: 83vh
+}
+.intro,.mockup{
+    flex-basis: 50%;
+}
+.intro h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: .6em;
+}
+.intro p{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+.intro button,.over-them-btn{
+    border: none;
+    border-radius: 28px;
+    padding: 1em 3em;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.intro button:hover, .over-them-btn:hover{
+    color: hsl(208, 11%, 55%);
+    background-color: hsla(322, 100%, 66%,.5);
+}
+nav h1 img{
+   width: 7em;
+}
+.mockup img{
+    width: 100%;
+}
+.sec-sec{
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em;
+    gap: 3.5em;
+}
+.sec-sec article{
+    width: 75vw;
+    gap: 1.5em;
+    padding: 1.5em;
+}
+.text{
+    flex-basis: 50%;
+}
+.sec-sec .text h2{
+    font-size: 2.5rem;
+    margin-bottom: .7em;
+}
+.sec-sec .text p{
+    color: hsl(208, 11%, 55%);
+    font-size: 1.6rem;
+}
+.sec-sec .img-container{
+    width: 50%;
+}
+.sec-sec img{
+    width: 100%;
+}
+/* footer */
+footer{
+    margin-top: 15em;
+    background-color: hsl(192, 100%, 9%);
+    padding: 5em;
+    position: relative;
+}
+.over-them-all{
+    background-color: hsl(193, 100%, 96%);
+    text-align: center;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 2em;
+    margin: 0 auto 5em;
+    position: absolute;
+    top: -10em;
+    left: 0;
+    right: 0;
+}
+.over-them-all h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.3em;
+}
+.footer-logo{
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+footer a, .footer{
+    color: hsl(193, 100%, 96%);
+}
+.footer{
+    justify-content: space-between;
+}
+.company-desc{
+    flex-basis: 25%;
+}
+.footer-div{
+    gap: 10px;
+    margin-bottom: 2em;
+}
+footer ul li{
+    list-style-type: none;
+    margin-bottom: 2.2em;
+}
+footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+/* socials icon container*/
+.socials{
+    margin-bottom: 14em;
+}
+footer i{
+    font-size: 2.3rem;
+    border: 2px solid hsl(193, 100%, 96%);
+    border-radius: 50%;
+    padding: .2em;
+    margin-right: .25em;
+}
+footer p{
+    font-size: 1.3rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (width < 600px){
+    .call-to-action,.intro button{
+        padding: .6em 1em;
+    }
+    .intro button{
+        margin-bottom: 2em;
+    }
+    main,.sec-sec,footer{
+        padding: 2.1em;
+    }
+    main{
+        background-image: url("./images/bg-hero-mobile.svg");
+        background-size: contain;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .footer-logo #footer-logo-img{
+        margin-top: .3em;
+        width: 6em;
+    }
+    .nav-link{
+        padding: .6em 2.4em;
+    }
+    .intro{
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 2.3rem;
+    }
+    .intro p{
+        font-size: 1.57rem;
+    }
+
+    .first-sec,.sec-sec article,.footer{
+        flex-direction: column;
+    }
+    .sec-sec article{
+        width: 90vw;
+        text-align: center;
+    }
+    .sec-sec .text h2{
+        font-size: 2rem;
+    }
+    .sec-sec .text p{
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+    .sec-sec .img-container{
+        width: 100%;
+    }
+    .over-them-all{
+        width: 93vw;
+        padding: 1.3em;
+        top: -6.5em;
+    }
+    .over-them-all h1{
+        margin-bottom: .6em;
+    }
+    footer ul li{
+        margin-bottom: 1.2em;
+    }
+    .last-article{
+        text-align: center;
+    }
+    .socials{
+        margin-bottom: 3em;
+        margin-top: 2em;
+    }
+}
